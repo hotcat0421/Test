@@ -1,18 +1,7 @@
-//
-//  Response.swift
-//  Homework4
-//
-//  Created by 박정우 on 7/8/24.
-//
+import Foundation
 
-import SwiftUI
-
-struct Response: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    Response()
+//JSON 데이터를 Swift 객체로 변환하는 기능을 제공
+public struct BoardResponse: Decodable {
+    public let title: String
+    public let content: String
 }
